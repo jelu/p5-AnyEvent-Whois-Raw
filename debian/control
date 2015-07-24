@@ -1,0 +1,26 @@
+Source: libanyevent-whois-raw-perl
+Section: perl
+Priority: optional
+Maintainer: Jerry Lundström <lundstrom.jerry@gmail.com>
+Build-Depends:
+ debhelper (>= 8.0.0)
+Build-Depends-Indep:
+ perl,
+ libnet-whois-raw-perl (>= 2.31),
+ libanyevent-perl (>= 3.3),
+ libanyevent-http-perl (>= 1.43)
+Standards-Version: 3.9.4
+
+Package: libanyevent-whois-raw-perl
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${perl:Depends},
+ libnet-whois-raw-perl (>= 2.31),
+ libanyevent-perl (>= 3.3),
+ libanyevent-http-perl (>= 1.43)
+Description: Non-blocking wrapper for Net::Whois::Raw
+ This module provides non-blocking AnyEvent compatible wrapper for Net::Whois::Raw.
+ It is not trivial to make non-blocking module from blocking one without full rewrite.
+ This wrapper makes such attempt. To decide how ugly or beautiful this attempt implemented
+ see source code of the module.
