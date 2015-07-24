@@ -1,3 +1,9 @@
+libanyevent-whois-raw-perl (0.07-2~unstable-1) unstable; urgency=low
+
+  * Corrected package version.
+
+ -- Jerry Lundström <lundstrom.jerry@gmail.com>  Fri, 24 Jul 2015 12:34:16 +0200
+
 libanyevent-whois-raw-perl (0.07-1~unstable-1) unstable; urgency=low
 
   * Initial upstream release.
